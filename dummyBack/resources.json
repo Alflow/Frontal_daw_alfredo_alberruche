@@ -512,12 +512,12 @@
     {
       "DNI": "23423434",
       "name": "ALBERTO",
-      "ciudad": "Logroño"
+      "city": "Logroño"
     },
     {
       "DNI": "1222323",
       "name": "JAIRO",
-      "ciudad": "Madrid"
+      "city": "Madrid"
     }
   ]
 }

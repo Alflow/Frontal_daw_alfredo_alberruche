@@ -29,7 +29,10 @@ export default function Header() {
         </ul>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#insertar">Añade nuevos Pokemon!</a>
+        <a class="nav-link active" href="#insertarPokemon">Añade nuevos Pokemon!</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#insertarEntrenadores">Añade nuevos Entrenadores!</a>
       </li>
     </ul>
     

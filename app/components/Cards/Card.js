@@ -1,5 +1,5 @@
 export function Card(pokemon) {
-  console.log(pokemon);
+  // console.log(pokemon);
   const $col = document.createElement("div");
   $col.classList = "col";
   const $card = document.createElement("div");
