@@ -12,15 +12,7 @@ export default function Home() {
   $gallery.classList = "row col-9 row-cols-1 row-cols-md-6 g-4";
   $home.appendChild($gallery);
 
-  peticion({
-    url: config_db.POKEMON,
-    cbSuccess: (pokemon) => {
-      pokemon.forEach((e) => {
-        // console.log(e.name);
-        $gallery.appendChild(Card(e));
-      });
-    },
-  });
+  $home.innerHTML = `<p> HOLA HOLA ES EL HOME </p>`;
 
   return $home;
 }

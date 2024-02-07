@@ -1,6 +1,7 @@
 import Error404 from "./404/Error404.js";
-import Main from "./Main.js";
+// import Main from "./Main.js";
 import Home from "./Pages/Home/Home.js";
+import PokemonPage from "./Pages/PokemonPage/PokemonPage.js";
 import Page2 from "./Pages/PokemonPage/PokemonPage.js";
 
 export default function Router() {
@@ -16,7 +17,7 @@ export default function Router() {
 
     case "#pokemon":
       {
-        $main.appendChild(Page2());
+        $main.appendChild(PokemonPage());
       }
       break;
 
