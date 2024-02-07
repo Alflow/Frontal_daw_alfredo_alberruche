@@ -1,0 +1,523 @@
+{
+  "pokemon": [
+    {
+      "id": "1",
+      "name": "Aquixal",
+      "location": "A Coruña",
+      "type": "Agua",
+      "description": "Aquixal es un Pokémon tipo Agua que habita en las costas rocosas de la región. Su cuerpo se asemeja al de un pulpo, con tentáculos largos y flexibles cubiertos de ventosas que le permiten adherirse firmemente a las rocas incluso en las aguas más turbulentas. Su piel tiene una textura que recuerda a la de los percebes, lo que le permite camuflarse entre las rocas para emboscar a sus presas o evadir a los depredadores. Aquixal tiene dos grandes ojos que le proporcionan una visión excepcional, lo que es crucial para su supervivencia en el entorno marino.",
+      "abilities": [
+        {
+          "name": "Camuflaje Marino",
+          "description": "Le permite esconderse entre las rocas y el entorno submarino, aumentando su evasión bajo ciertas condiciones climáticas (como la lluvia)."
+        },
+        {
+          "name": "Tinta Curativa",
+          "description": "Una habilidad especial que le permite lanzar una tinta con propiedades curativas, pudiendo restaurar algo de su salud o la de sus aliados en batalla."
+        },
+        {
+          "name": "Abrazo de Tentáculos",
+          "description": "Utiliza sus tentáculos para atrapar y dañar al oponente, con la posibilidad de disminuir la velocidad del enemigo debido a la presión de sus ventosas."
+        }
+      ],
+      "img": "dummyBack/images/aquixal.png"
+    },
+    {
+      "id": "2",
+      "name": "Vinhalga",
+      "location": "Pontevedra",
+      "type": "Planta/Agua",
+      "description": "Vinhalga es un Pokémon que combina características de las plantas de vid con las algas marinas, simbolizando la unión de la tierra y el mar que caracteriza a Pontevedra. Su cuerpo es largo y flexible, parecido al de una vid, con hojas que recuerdan a las algas marinas. Su coloración varía del verde oscuro al azulado, con pequeñas 'uvas' de agua cristalina dispersas a lo largo de su cuerpo. Vive cerca de las aguas de las Rías Baixas, donde su presencia es un signo de un ecosistema marino saludable.",
+      "abilities": [
+        {
+          "name": "Hidrovino",
+          "description": "Ataque especial que dispara chorros de agua enriquecida, similar al vino, que puede confundir al oponente."
+        },
+        {
+          "name": "Fotosíntesis Marina",
+          "description": "Recupera salud bajo la luz del sol, transformando la energía solar en vitalidad gracias a sus hojas de alga."
+        },
+        {
+          "name": "Enredo de Vid",
+          "description": "Utiliza sus cuerpos de vid para atrapar y dañar al oponente, reduciendo su velocidad debido a la restricción."
+        }
+      ],
+      "img": "dummyBack/images/vinhalga.png"
+    },
+    {
+      "id": "3",
+      "name": "Muraluce",
+      "location": "Lugo",
+      "type": "Roca/Planta",
+      "description": "Muraluce es un Pokémon que encarna la resistencia y la historia antigua de Lugo, con un cuerpo que imita las piedras de la Muralla Romana y detalles vegetales que simbolizan los bosques y la naturaleza protegida de la provincia. Tiene aspecto de guardián, con partes de su cuerpo cubiertas de musgo y enredaderas, y ojos que brillan con la sabiduría de los siglos.",
+      "abilities": [
+        {
+          "name": "Barrera Ancestral",
+          "description": "Fortalece su defensa y la de sus aliados al levantar una barrera protectora que simula la muralla."
+        },
+        {
+          "name": "Latigazo Verde",
+          "description": "Ataca con enredaderas que causan daño y pueden atrapar al oponente, reduciendo su velocidad."
+        },
+        {
+          "name": "Recuperación Ancestral",
+          "description": "Se cura lentamente durante el combate, representando la durabilidad y la resistencia de las construcciones antiguas."
+        }
+      ],
+      "img": "dummyBack/images/muraluce.png"
+    },
+    {
+      "id": "4",
+      "name": "Termalix",
+      "location": "Ourense",
+      "type": "Fuego/Agua",
+      "description": "Termalix es un Pokémon que vive en las aguas termales de Ourense, aprovechando las propiedades curativas y el calor de estas para recuperar su energía. Su cuerpo emite un vapor cálido constantemente, lo que le da un aspecto brumoso. Su piel tiene tonalidades que van desde el azul claro de las aguas frescas hasta el rojo y naranja que evocan el calor de las termas. Termalix es conocido por su capacidad para curar y rejuvenecer, tanto a sí mismo como a otros Pokémon, con el vapor y las aguas que emana.",
+      "abilities": [
+        {
+          "name": "Vapor Curativo",
+          "description": "Lanza un vapor caliente que puede curar algunos estados alterados de sus aliados."
+        },
+        {
+          "name": "Chorro Termal",
+          "description": "Un ataque de agua caliente que puede quemar al oponente."
+        },
+        {
+          "name": "Rejuvenecimiento",
+          "description": "Capacidad de recuperar una mayor cantidad de salud bajo condiciones de clima cálido o soleado, simbolizando el efecto revitalizante de las aguas termales."
+        }
+      ],
+      "img": "dummyBack/images/termalix.png"
+    },
+    {
+      "id": "5",
+      "name": "Sidralus",
+      "location": "Asturias",
+      "type": "Planta/Hada",
+      "description": "Sidralus es un Pokémon que personifica el espíritu de Asturias, desde sus bosques neblinosos y montañas hasta sus tradiciones ancestrales. Este Pokémon tiene la habilidad de fermentar néctar en su interior para crear una sidra mágica que tiene propiedades curativas y revitalizantes. Su cuerpo está adornado con hojas y flores de manzano, y desprende un agradable aroma a sidra fresca. Sidralus es muy respetado y querido en las comunidades donde habita, a menudo asociado con festividades y reuniones.",
+      "abilities": [
+        {
+          "name": "Pulso Sidra",
+          "description": "Lanza un chorro de sidra mágica que puede confundir al oponente y a veces curar a los aliados."
+        },
+        {
+          "name": "Encanto Celta",
+          "description": "Un ataque de tipo Hada que reduce la defensa del oponente, inspirado en los encantamientos de la mitología celta."
+        },
+        {
+          "name": "Fermentación Mística",
+          "description": "Capacidad de curarse a sí mismo, representando el proceso de fermentación de la sidra. Este movimiento también puede aumentar su ataque especial temporalmente."
+        }
+      ],
+      "img": "dummyBack/images/sidralus.png"
+    },
+    {
+      "id": "6",
+      "name": "Cantabrisea",
+      "location": "Cantabria",
+      "type": "Agua",
+      "description": "Cantabrisea es un Pokémon que simboliza la imponente presencia del Mar Cantábrico, conocido por sus fuertes olas y acantilados escarpados. Su cuerpo combina elementos del mar, como una textura que recuerda a las olas del mar en movimiento, con partes rocosas que evocan los acantilados frente al mar. Cantabrisea tiene la habilidad de manipular el agua a su alrededor para crear potentes olas y protegerse con barreras de roca.",
+      "abilities": [
+        {
+          "name": "Ola Cantábrica",
+          "description": "Un ataque potente que simula una gran ola, capaz de hacer retroceder al oponente."
+        },
+        {
+          "name": "Barrera de Acantilado",
+          "description": "Fortalece su defensa al crear una barrera rocosa alrededor de sí mismo."
+        },
+        {
+          "name": "Salto del Acantilado",
+          "description": "Un ataque que le permite lanzarse contra el oponente con gran fuerza, simbolizando el impacto de las olas contra los acantilados."
+        }
+      ],
+      "img": "dummyBack/images/cantabrisea.png"
+    },
+    {
+      "id": "7",
+      "name": "Guggenferr",
+      "location": "Vizcaya",
+      "type": "Acero",
+      "description": "Guggenferr es un Pokémon que simboliza la fusión de arte y tecnología, con un cuerpo que refleja la arquitectura vanguardista del Museo Guggenheim, mezclada con elementos que recuerdan al pasado industrial de Vizcaya. Su estructura metálica tiene formas geométricas y orgánicas, evocando las obras de arte contemporáneo y la robustez del hierro y acero producido en la región. Guggenferr tiene la habilidad de transformar su cuerpo en diferentes formas, adaptándose a diversas situaciones de combate y representando la innovación y creatividad.",
+      "abilities": [
+        {
+          "name": "Reflejo Metálico",
+          "description": "Refleja los ataques especiales de vuelta hacia el oponente, simbolizando las superficies reflectantes del museo."
+        },
+        {
+          "name": "Corte Vanguardista",
+          "description": "Un ataque rápido y preciso que puede causar un daño crítico, inspirado en las formas afiladas y modernas de la arquitectura de Vizcaya."
+        },
+        {
+          "name": "Fortaleza Industrial",
+          "description": "Aumenta su defensa de forma significativa, representando la fortaleza y resistencia del pasado industrial de la provincia."
+        }
+      ],
+      "img": "dummyBack/images/guggenferr.png"
+    },
+    {
+      "id": "8",
+      "name": "Flyschdra",
+      "location": "Guipúzcoa",
+      "type": "Roca/Agua",
+      "description": "Flyschdra es un Pokémon que simboliza la majestuosa costa de Guipúzcoa y su rica herencia cultural. Su cuerpo se asemeja a las capas de roca encontradas en el Flysch, con tonalidades que van desde el gris oscuro hasta el verde y azul, reflejando el mar. Flyschdra tiene la capacidad de manipular el agua a su alrededor para protegerse y atacar, y sus múltiples cabezas representan la diversidad y riqueza cultural de Guipúzcoa.",
+      "abilities": [
+        {
+          "name": "Ola Geológica",
+          "description": "Genera una poderosa ola que simula las capas del Flysch, capaz de dañar y disminuir la velocidad del oponente."
+        },
+        {
+          "name": "Brisa Marina",
+          "description": "Recupera algo de salud y puede aumentar su velocidad, simbolizando el refrescante clima costero de Guipúzcoa."
+        },
+        {
+          "name": "Canto Cultural",
+          "description": "Un ataque de tipo sonido que confunde al oponente, inspirado en las tradiciones musicales y festivales de la provincia."
+        }
+      ],
+      "img": "dummyBack/images/flyschdra.png"
+    },
+    {
+      "id": "9",
+      "name": "Gasteizor",
+      "location": "Álava",
+      "type": "Fantasma/Tierra",
+      "description": "Gasteizor es un Pokémon que encarna la historia medieval y las leyendas de Álava. Inspirado en las murallas y torres de Vitoria-Gasteiz, su cuerpo parece estar hecho de antiguas piedras cubiertas de musgo, y sus ojos brillan con la sabiduría de los siglos. Gasteizor tiene la habilidad de desaparecer y reaparecer a voluntad, como los fantasmas de las leyendas que rondan el casco antiguo, y sus ataques tienen un aire místico, rememorando las batallas históricas y las estrategias de defensa de la ciudad.",
+      "abilities": [
+        {
+          "name": "Muralla Espectral",
+          "description": "Crea una barrera protectora que refleja ataques especiales y aumenta su defensa."
+        },
+        {
+          "name": "Lamento Medieval",
+          "description": "Un ataque sonoro que puede confundir o atemorizar al oponente, reflejando las antiguas leyendas y cuentos."
+        },
+        {
+          "name": "Paso Fantasmal",
+          "description": "Permite evadir el próximo ataque, simbolizando su habilidad para desvanecerse y moverse entre dimensiones."
+        }
+      ],
+      "img": "dummyBack/images/gasteizor.png"
+    },
+    {
+      "id": "10",
+      "name": "Ferminox",
+      "location": "Navarra",
+      "type": "Normal",
+      "description": "Ferminox es un Pokémon con la apariencia de un toro majestuoso y enérgico, cuya presencia evoca el espíritu vibrante y la tradición de los Sanfermines. Su pelaje es de un rojo intenso con manchas blancas, reflejando los colores típicos de la vestimenta durante la festividad. Ferminox tiene cuernos excepcionalmente fuertes y un collar con un pañuelo rojo alrededor de su cuello, símbolo icónico de San Fermín. Es conocido por su velocidad impresionante y su capacidad para embestir con gran fuerza.",
+      "abilities": [
+        {
+          "name": "Carga Festiva",
+          "description": "Un poderoso ataque de embestida que aumenta su velocidad con cada uso, simbolizando el frenesí del encierro."
+        },
+        {
+          "name": "Rugido Festivo",
+          "description": "Un rugido que aumenta el ataque de Ferminox y puede intimidar a los oponentes, reduciendo su ataque."
+        },
+        {
+          "name": "Resistencia Pamplonica",
+          "description": "Aumenta temporalmente su defensa y resistencia a los ataques, reflejando la tenacidad y el espíritu indomable de los toros en San Fermín."
+        }
+      ],
+      "img": "dummyBack/images/ferminox.png"
+    },
+    {
+      "id": "11",
+      "name": "Dualiwine",
+      "location": "La Rioja",
+      "type": "Planta",
+      "description": "Dualiwine es un Pokémon que evoca los viñedos ondulantes de La Rioja, con un cuerpo que parece estar compuesto por vides y hojas de vid. Sus colores varían entre tonos de verde y púrpura, representando las uvas maduras. Dualiwine tiene la capacidad de fermentar bayas en su interior, produciendo un néctar que puede usar tanto para atacar como para curar. Este néctar tiene propiedades intoxicantes para sus enemigos, pero revitalizantes para Dualiwine y sus aliados.",
+      "abilities": [
+        {
+          "name": "Fermentación",
+          "description": "Convierte bayas en poderosos elixires que pueden curar a Dualiwine o intoxicar a sus oponentes."
+        },
+        {
+          "name": "Aroma Embriagador",
+          "description": "Un ataque que puede confundir a los oponentes, simulando el efecto embriagador del vino."
+        },
+        {
+          "name": "Cosecha Generosa",
+          "description": "Restaura un poco de salud cada turno, representando la capacidad de Dualiwine para aprovechar el poder del suelo fértil de La Rioja."
+        }
+      ],
+      "img": "dummyBack/images/dualiwine.png"
+    },
+    {
+      "id": "12",
+      "name": "Celtispirit",
+      "location": "Soria",
+      "type": "Fantasma/Planta",
+      "description": "Celtispirit es un Pokémon que encarna los misterios de los antiguos bosques y los sitios celtas de Soria. Su cuerpo es etéreo y parece estar parcialmente compuesto por hojas y ramas de árboles antiguos, así como por neblinas que recuerdan a los amaneceres en la Laguna Negra. Celtispirit tiene la capacidad de comunicarse con la naturaleza y guiar a los perdidos, siendo protector de los bosques y de los secretos que estos esconden.",
+      "abilities": [
+        {
+          "name": "Susurro del Bosque",
+          "description": "Un ataque que confunde al oponente, simulando los susurros engañosos de los espíritus del bosque."
+        },
+        {
+          "name": "Fogonazo Celta",
+          "description": "Ilumina el campo de batalla con una luz mística que puede disminuir la precisión del oponente."
+        },
+        {
+          "name": "Renacer del Bosque",
+          "description": "Restaura su salud al absorber la energía del entorno natural, simbolizando la regeneración y el ciclo de vida de la naturaleza."
+        }
+      ],
+      "img": "dummyBack/images/celtispirit.png"
+    },
+    {
+      "id": "13",
+      "name": "Pireneox",
+      "location": "Huesca",
+      "type": "Roca/Hielo",
+      "description": "Pireneox es un Pokémon que personifica la magnificencia de los Pirineos de Huesca, con un cuerpo formado por rocas y cristales de hielo que reflejan la luz, creando destellos similares a los de los paisajes helados y montañosos. Sus movimientos son ágiles y gráciles, a pesar de su apariencia robusta, permitiéndole navegar por terrenos escarpados con facilidad. Pireneox tiene la habilidad de generar avalanchas o controlar el hielo para defender su territorio y proteger la naturaleza.",
+      "abilities": [
+        {
+          "name": "Avalancha",
+          "description": "Un poderoso ataque de tipo Roca que puede atrapar al oponente bajo una masa de rocas y hielo."
+        },
+        {
+          "name": "Aliento Gélido",
+          "description": "Un ataque de tipo Hielo que congela a los enemigos, reduciendo su velocidad drásticamente."
+        },
+        {
+          "name": "Guardián de la Montaña",
+          "description": "Aumenta su defensa en terrenos rocosos o nevados, simbolizando su conexión con los Pirineos."
+        }
+      ],
+      "img": "dummyBack/images/pireneox.png"
+    },
+    {
+      "id": "14",
+      "name": "Ebrionwave",
+      "location": "Zaragoza",
+      "type": "Agua/Volador",
+      "description": "Ebrionwave es un Pokémon que captura la esencia del río Ebro, siendo vital para la vida y la cultura en Zaragoza. Su cuerpo fluye y ondula como el agua, con alas que reflejan los colores del cielo y el agua al amanecer y al atardecer, simbolizando el puente entre la naturaleza y la ciudad. Ebrionwave tiene la habilidad de purificar el agua y el aire a su alrededor, representando la importancia del río Ebro como fuente de vida y sustento.",
+      "abilities": [
+        {
+          "name": "Corriente del Ebro",
+          "description": "Un poderoso ataque de agua que puede arrastrar a los oponentes y aumentar la velocidad de Ebrionwave."
+        },
+        {
+          "name": "Canto del Amanecer",
+          "description": "Restaura algo de salud a Ebrionwave y puede aumentar su ataque especial, simbolizando la esperanza y el renacimiento que trae cada nuevo día."
+        },
+        {
+          "name": "Vuelo del Fénix",
+          "description": "Un ataque de tipo Volador que simboliza la majestuosidad y la capacidad de renacer, aumentando su evasión."
+        }
+      ],
+      "img": "dummyBack/images/ebrionwave.png"
+    },
+    {
+      "id": "15",
+      "name": "Mudéjarmon",
+      "location": "Teruel",
+      "type": "Roca/Fantasma",
+      "description": "Mudéjarmon es un Pokémon que simboliza la arquitectura mudéjar de Teruel y la eterna historia de amor de los Amantes de Teruel. Su cuerpo está adornado con patrones geométricos y de azulejos que recuerdan al arte mudéjar, y sus ojos emanan una luz suave y melancólica, reflejando la trágica pero hermosa historia de amor. Mudéjarmon tiene la habilidad de encantar y confundir a sus oponentes con su presencia etérea y mística, y sus ataques pueden incluir ecos del pasado y susurros de antiguas leyendas.",
+      "abilities": [
+        {
+          "name": "Susurro Mudéjar",
+          "description": "Un ataque que confunde al oponente, inspirado en los complejos patrones y la rica historia del arte mudéjar."
+        },
+        {
+          "name": "Lamento de los Amantes",
+          "description": "Un poderoso ataque de tipo Fantasma que puede disminuir la defensa y el ataque del oponente, evocando la tristeza y la belleza de la historia de amor de Teruel."
+        },
+        {
+          "name": "Guardián del Patrimonio",
+          "description": "Refuerza su defensa al estar en peligro, simbolizando la durabilidad y la resistencia del arte y las tradiciones de Teruel."
+        }
+      ],
+      "img": "dummyBack/images/mudejarmon.png"
+    },
+    {
+      "id": "16",
+      "name": "Románix",
+      "location": "Lérida",
+      "type": "Roca/Hielo",
+      "description": "Románix es un Pokémon que encapsula la majestuosidad de los paisajes de montaña de Lérida y la belleza atemporal de su arte románico. Su cuerpo está formado por piedras que parecen talladas como las iglesias románicas, con intrincados relieves y una textura que recuerda a las antiguas construcciones de piedra. Partes de su cuerpo están cubiertas por un manto de hielo cristalino, reflejando los picos nevados de los Pirineos. Románix tiene la habilidad de controlar tanto la roca como el hielo, utilizándolos para proteger las antiguas reliquias y los paisajes naturales de su territorio.",
+      "abilities": [
+        {
+          "name": "Avalancha Pirenaica",
+          "description": "Un poderoso ataque de tipo Hielo que simula una avalancha descendiendo de las montañas."
+        },
+        {
+          "name": "Barrera Románica",
+          "description": "Fortalece su defensa al crear una barrera protectora que imita las sólidas murallas de las iglesias románicas."
+        },
+        {
+          "name": "Frigorífico Relieve",
+          "description": "Un ataque especial de tipo Hielo que puede congelar al oponente, inspirado en el frío que caracteriza a las alturas de los Pirineos."
+        }
+      ],
+      "img": "dummyBack/images/romanix.png"
+    },
+    {
+      "id": "17",
+      "name": "Gladiaton",
+      "location": "Tarragona",
+      "type": "Lucha/Roca",
+      "description": "Gladiaton es un Pokémon que personifica la valentía y el espíritu de los antiguos gladiadores romanos. Su cuerpo está formado por piedras que parecen talladas en las mismas rocas de las antiguas construcciones romanas de Tarragona, con marcas y cicatrices que cuentan historias de batallas pasadas. Gladiaton lleva un casco y armadura inspirados en los gladiadores, pero con un toque Pokémon. Es un luchador nato, con un fuerte sentido del honor y la justicia, y utiliza técnicas de combate que recuerdan a las de los gladiadores, adaptadas a su poderoso estilo Pokémon.",
+      "abilities": [
+        {
+          "name": "Golpe del Coliseo",
+          "description": "Un poderoso ataque de tipo Lucha que aumenta su ataque cada vez que lo usa, representando la creciente destreza de un gladiador en la arena."
+        },
+        {
+          "name": "Barrera de Mármol",
+          "description": "Aumenta su defensa al crear una barrera protectora que imita las sólidas estructuras romanas."
+        },
+        {
+          "name": "Espíritu del Imperio",
+          "description": "Un movimiento que le permite recuperar salud, inspirado en la resistencia y la fortaleza del Imperio Romano."
+        }
+      ],
+      "img": "dummyBack/images/gladiaton.png"
+    },
+    {
+      "id": "18",
+      "name": "Gaudix",
+      "location": "Barcelona",
+      "type": "Roca/Psíquico",
+      "description": "Gaudix es un Pokémon que refleja la singularidad y la creatividad de la arquitectura modernista de Barcelona. Su cuerpo está formado por estructuras y texturas que recuerdan a las obras de Gaudí, como la Sagrada Familia y el Parque Güell, con colores vibrantes y formas orgánicas que parecen desafiar las convenciones. Gaudix tiene la capacidad de alterar su entorno para crear espacios confusos y maravillosos, usando su poder psíquico para desorientar a sus oponentes mientras los cautiva con su belleza.",
+      "abilities": [
+        {
+          "name": "Ilusión Modernista",
+          "description": "Confunde al oponente con patrones y formas cambiantes, reduciendo su precisión."
+        },
+        {
+          "name": "Refugio Sagrado",
+          "description": "Crea una barrera protectora que refleja los ataques especiales, inspirada en las intrincadas fachadas de las construcciones de Gaudí."
+        },
+        {
+          "name": "Creatividad Infinita",
+          "description": "Aumenta su ataque especial al innovar constantemente en el campo de batalla, similar a la constante evolución de la obra de Gaudí."
+        }
+      ],
+      "img": "dummyBack/images/murallix.png"
+    },
+    {
+      "id": "19",
+      "name": "Murallix",
+      "location": "Gerona",
+      "type": "Roca/Fantasma",
+      "description": "Murallix es un Pokémon que personifica las antiguas murallas y el legado histórico de Gerona. Su cuerpo parece estar construido de piedras antiguas que han resistido el paso del tiempo, con partes de su ser que parecen desvanecerse en el aire, reflejando el aspecto fantasmal de las leyendas y las historias pasadas que resuenan en las calles y estructuras antiguas de la ciudad. Murallix tiene la capacidad de manipular su forma física, volviéndose intangible o sólido a voluntad, lo que le permite proteger los tesoros y secretos ocultos en Gerona.",
+      "abilities": [
+        {
+          "name": "Intangibilidad Antigua",
+          "description": "Permite a Murallix evitar ataques físicos durante un turno, simbolizando su capacidad para volverse fantasmal."
+        },
+        {
+          "name": "Asedio de Piedra",
+          "description": "Un ataque de tipo Roca que utiliza partes de su cuerpo para lanzar contra el oponente, inspirado en la defensa de las fortalezas."
+        },
+        {
+          "name": "Eco Histórico",
+          "description": "Reduce el ataque y la velocidad del oponente, reflejando la influencia paralizante de la presencia histórica de Gerona."
+        }
+      ],
+      "img": "dummyBack/images/murallix.png"
+    },
+    {
+      "id": "20",
+      "name": "Ceramix",
+      "location": "Castellón",
+      "type": "Roca",
+      "description": "Ceramix es un Pokémon que personifica la tradición cerámica de Castellón y su conexión con la tierra. Su cuerpo está compuesto por placas de cerámica decoradas con intrincados diseños que reflejan los paisajes y la flora de la Costa del Azahar y las montañas de Castellón. Ceramix tiene la habilidad de reconstruirse si se rompe, gracias a la arcilla mágica de la que está hecho, lo que simboliza el proceso de creación y renovación en la cerámica.",
+      "abilities": [
+        {
+          "name": "Barrera de Azulejos",
+          "description": "Crea una barrera protectora alrededor de sí mismo que puede reflejar ataques especiales, inspirada en los mosaicos de cerámica."
+        },
+        {
+          "name": "Lanzamiento de Loza",
+          "description": "Dispara fragmentos de cerámica afilados como proyectiles a sus oponentes, utilizando la dureza y la precisión de la cerámica."
+        },
+        {
+          "name": "Renovación Arcillosa",
+          "description": "Se cura una parte de su salud al final de cada turno, representando su capacidad de autoreparación y renovación."
+        }
+      ],
+      "img": "dummyBack/images/ceramix.png"
+    },
+    {
+      "id": "21",
+      "name": "Fallarbol",
+      "location": "Valencia",
+      "type": "Fuego/Planta",
+      "description": "Fallarbol encarna el espíritu de las Fallas de Valencia, un festival donde se queman construcciones artísticas para celebrar la llegada de la primavera. Su cuerpo parece hecho de madera y papel maché, materiales usados en las fallas, decorado con motivos florales y llamas que no lo consumen. Fallarbol tiene la capacidad de generar y controlar el fuego sin quemarse, utilizando este poder para proteger los bosques y campos de Valencia. Este Pokémon simboliza el renacimiento y la renovación, al igual que el festival celebra el final del invierno y el comienzo de una nueva estación.",
+      "abilities": [
+        {
+          "name": "Llama Festiva",
+          "description": "Un ataque de tipo Fuego que puede quemar al oponente mientras aumenta temporalmente el ataque de Fallarbol."
+        },
+        {
+          "name": "Renacimiento Verde",
+          "description": "Recupera salud cada vez que usa un ataque de tipo Planta, representando la regeneración y el crecimiento nuevos."
+        },
+        {
+          "name": "Danza de las Fallas",
+          "description": "Un movimiento especial que aumenta su velocidad y evasión, inspirado en los bailes y la música que acompañan al festival."
+        }
+      ],
+      "img": "dummyBack/images/fallarbol.png"
+    },
+    {
+      "id": "22",
+      "name": "Solfructo",
+      "location": "Alicante",
+      "type": "Fuego/Planta",
+      "description": "Solfructo es un Pokémon que simboliza la energía del sol que nutre los campos de Alicante y la celebración del fuego durante las Hogueras de San Juan. Su cuerpo tiene la forma de un árbol frutal, con hojas verdes y brillantes y frutas que parecen pequeños soles, irradiando luz y calor. Las 'frutas solares' de Solfructo son altamente energéticas y pueden revitalizar a otros Pokémon. Durante las batallas, Solfructo utiliza el poder del sol para fortalecer sus ataques de tipo Fuego y Planta, y su presencia es un recordatorio del ciclo de crecimiento, celebración y renovación.",
+      "abilities": [
+        {
+          "name": "Rayo Solar",
+          "description": "Un potente ataque de tipo Planta que absorbe la luz solar para golpear al oponente, más efectivo bajo luz intensa."
+        },
+        {
+          "name": "Fogata Festiva",
+          "description": "Un ataque de tipo Fuego que esparce chispas alrededor, aumentando su ataque especial y posiblemente quemando al oponente."
+        },
+        {
+          "name": "Renovación Frutal",
+          "description": "Recupera algo de salud cada turno, simbolizando la capacidad de Alicante para regenerarse y prosperar bajo el sol."
+        }
+      ],
+      "img": "dummyBack/images/solfructo.png"
+    },
+    {
+      "id": "23",
+      "name": "Alcarapix",
+      "location": "Guadalajara",
+      "type": "Bicho/Volador",
+      "description": "Alcarapix, el Pokémon Abeja Mielera, es conocido por su incansable trabajo en los campos de La Alcarria, produciendo una de las mieles más puras y codiciadas de toda España. Este Pokémon combina fuerza y agilidad, con un exoesqueleto blindado que lo protege de los depredadores naturales y una actitud desafiante ante los retos. Sus alas doradas no solo le permiten volar a gran velocidad, sino que también reflejan la luz solar, desorientando a sus oponentes. Alcarapix utiliza su aguijón no solo para defenderse, sino también para extraer el néctar de las flores más profundas, lo que contribuye a la calidad excepcional de su miel.",
+      "abilities": [
+        {
+          "name": "Aguijón Áureo",
+          "description": "Alcarapix ataca con su aguijón dorado, que tiene una alta probabilidad de envenenar al oponente, reflejando la potencia y precisión de su ataque."
+        },
+        {
+          "name": "Polen Explosivo",
+          "description": "Lanza un polvo especial recolectado de las flores de La Alcarria, que puede confundir o adormecer al rival, simbolizando su habilidad para manipular los recursos naturales de su entorno."
+        },
+        {
+          "name": "Vuelo Centelleante",
+          "description": "Utiliza sus alas doradas para crear un destello cegador, incrementando su velocidad y esquivando el próximo ataque enemigo, una táctica que demuestra su astucia en combate."
+        }
+      ],
+      "img": "dummyBack/images/alcarapix.png"
+    }
+  ],
+
+  "entrenadores": [
+    {
+      "DNI": "23423434",
+      "name": "ALBERTO",
+      "ciudad": "Logroño"
+    },
+    {
+      "DNI": "1222323",
+      "name": "JAIRO",
+      "ciudad": "Madrid"
+    }
+  ]
+}

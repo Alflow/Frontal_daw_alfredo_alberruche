@@ -2,15 +2,16 @@ import config_db from "../../../helpers/config_db.js";
 import peticion from "../../../helpers/peticion.js";
 import { Card } from "../../Cards/Card.js";
 
-export default function Home() {
-  const $home = document.createElement("div");
+export default function PokemonPage() {
+  const $pokemonPage = document.createElement("div");
+  $pokemonPage.id = "pokemon";
 
-  $home.classList = "d-flex flex-column align-items-center mt-5";
+  $pokemonPage.classList = "d-flex flex-column align-items-center mt-5";
 
   const $gallery = document.createElement("div");
 
   $gallery.classList = "row col-9 row-cols-1 row-cols-md-6 g-4";
-  $home.appendChild($gallery);
+  $pokemonPage.appendChild($gallery);
 
   peticion({
     url: config_db.POKEMON,
@@ -22,5 +23,5 @@ export default function Home() {
     },
   });
 
-  return $home;
+  return $pokemonPage;
 }
