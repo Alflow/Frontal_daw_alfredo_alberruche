@@ -5,6 +5,7 @@ import EntrenadoresInsert from "./Pages/Forms/EntrenadoresInsert.js";
 import PokemonInsert from "./Pages/Forms/pokemonInsert.js";
 import PokemonPage from "./Pages/PokemonPage/PokemonPage.js";
 import Page2 from "./Pages/PokemonPage/PokemonPage.js";
+import { insertarEntrenador } from "../helpers/Entrenador.js";
 
 export default function Router() {
   const $main = document.getElementById("main");
@@ -32,6 +33,7 @@ export default function Router() {
     case "#insertarEntrenadores":
       {
         $main.appendChild(EntrenadoresInsert());
+        insertarEntrenador();
       }
       break;
 

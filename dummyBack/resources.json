@@ -507,17 +507,51 @@
       "img": "dummyBack/images/alcarapix.png"
     }
   ],
-
   "entrenadores": [
     {
       "DNI": "23423434",
       "name": "ALBERTO",
-      "city": "Logroño"
+      "city": "Logroño",
+      "id": "7014"
     },
     {
       "DNI": "1222323",
       "name": "JAIRO",
-      "city": "Madrid"
+      "city": "Madrid",
+      "id": "0984"
+    },
+    {
+      "id": "6952",
+      "DNI": "NUEVONUEVO",
+      "name": "ALBERTO NUEVO NUEVO",
+      "city": "Logroño ES NUEVO NUEVO"
+    },
+    {
+      "id": "c89f"
+    },
+    {
+      "id": "53f8"
+    },
+    {
+      "id": "8c90"
+    },
+    {
+      "id": "baf9",
+      "dni": "sdsdsdsd",
+      "name": "dsdsdsds",
+      "city": "dsddsdsd"
+    },
+    {
+      "id": "5751",
+      "dni": "03211212",
+      "name": "MIKE LITORYS",
+      "city": "LEPE"
+    },
+    {
+      "id": "7bf1",
+      "dni": "AAAAA",
+      "name": "AAAAA",
+      "city": "AAAAA"
     }
   ]
 }
