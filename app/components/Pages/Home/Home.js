@@ -15,15 +15,13 @@ export default function Home() {
   $home.innerHTML = `
   <div>
   <!-- INICIO / HOME -->
-  <section class="full-height bg-dark px-lg-5">
+  <section class="full-height  px-lg-5">
       <div class="container">
           <div class="col-lg-10">
               <h1 class="display-4 fw-bold">Pokemon Spain Edition (FanMade)</h1>
+              <img src="dummyBack/images/HEROTEST.png" />
               <p class="lead mt-2 mb-4" >Bienvenido a la podeDeSpain</p>
-              <div data-aos="fade-up">
-                  <a href="" class="btn btn-brand me-3">Visita mis proyectos</a>
-                  <a href="" class="link-custom" >Tlfno: 640 75 79 42</a>
-              </div>
+              
           </div>
       </div>
   </section>

@@ -40,52 +40,12 @@ export default function Header() {
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
-    <div class="col-md-4 text-end">
-          <button type="button" class="btn btn-primary mx-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            LOGIN
-          </button>
-
-        </div>
+    
     
 
   </div>
 </div>
 `;
 
-  const $modal = document.createElement("div");
-
-  $modal.classList = "modal fade";
-  $modal.id = "exampleModal";
-
-  $modal.setAttribute("tabindex", "-1");
-  $modal.setAttribute("aria-labelledby", "exampleModalLabel");
-  $modal.setAttribute("aria-hidden", "true");
-  $modal.innerHTML = `
-  <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">No compartiremos tus datos con nadie</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
-            </div>
-            <a class="nav-link active text-end" aria-current="page" href="#">¿No registrado? Regístrate aquí.</a>
-            <button type="submit" class="btn btn-primary">Acceder</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  `;
-
-  $navbar.appendChild($modal);
   return $navbar;
 }
