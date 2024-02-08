@@ -10,7 +10,7 @@ export default function PokemonPage() {
 
   const $gallery = document.createElement("div");
 
-  $gallery.classList = "row col-9 row-cols-1 row-cols-md-6 g-4";
+  $gallery.classList = "row col-9 row-cols-2 row-cols-md-3 g-4";
   $pokemonPage.appendChild($gallery);
 
   peticion({
