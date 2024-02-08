@@ -1,5 +1,5 @@
 import config_db from "../../../helpers/config_db.js";
-import peticion from "../../../helpers/peticion.js";
+import { peticion } from "../../../helpers/peticion.js";
 import { Card } from "../../Cards/Card.js";
 
 export default function PokemonPage() {

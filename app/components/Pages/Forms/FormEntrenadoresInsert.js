@@ -1,6 +1,6 @@
 import { insertarEntrenador } from "../../../helpers/Entrenador.js";
-
-
+import config_db from "../../../helpers/config_db.js";
+import { envio } from "../../../helpers/peticion.js";
 export default function EntrenadoresInsert() {
   const $form = document.createElement("form");
 
@@ -25,6 +25,20 @@ export default function EntrenadoresInsert() {
 <button type="submit" class="btn btn-primary">Enviar</button>
 
 `;
+  $form.addEventListener("submit", (e) => {
+    // console.log(e);
+    e.preventDefault();
+    let form = new FormData($form);
+
+    envio({
+      url: config_db.ENTRENADORES,
+      method: "POST",
+      datos: JSON.stringify(Object.fromEntries(form)),
+      cbSuccess: (data) => {
+        console.log(data);
+      },
+    });
+  });
 
   return $form;
 }

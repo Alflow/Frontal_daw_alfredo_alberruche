@@ -1,7 +1,7 @@
 import Error404 from "./404/Error404.js";
 // import Main from "./Main.js";
 import Home from "./Pages/Home/Home.js";
-import EntrenadoresInsert from "./Pages/Forms/EntrenadoresInsert.js";
+import FormEntrenadoresInsert from "./Pages/Forms/FormEntrenadoresInsert.js";
 import PokemonInsert from "./Pages/Forms/pokemonInsert.js";
 import PokemonPage from "./Pages/PokemonPage/PokemonPage.js";
 import Page2 from "./Pages/PokemonPage/PokemonPage.js";
@@ -32,8 +32,8 @@ export default function Router() {
 
     case "#insertarEntrenadores":
       {
-        $main.appendChild(EntrenadoresInsert());
-        insertarEntrenador();
+        $main.appendChild(FormEntrenadoresInsert());
+        // insertarEntrenador();
       }
       break;
 
