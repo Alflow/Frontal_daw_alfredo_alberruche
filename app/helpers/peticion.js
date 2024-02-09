@@ -1,19 +1,26 @@
 export async function peticion(props) {
   try {
-    let { cbSuccess, url } = props;
-    const response = await fetch(url);
+    let { cbSuccess, url, method = 'GET', datos } = props; // Asume GET como método predeterminado
+    const response = await fetch(url, {
+      method, // POST, GET, etc.
+      headers: {
+        'Content-Type': 'application/json' // Asegúrate de que el servidor acepte JSON
+      },
+      body: method !== 'GET' ? datos : null, // Solo envía datos si no es una petición GET
+    });
+
     if (!response.ok) {
-      throw new Error(response);
+      throw new Error(response.statusText);
     }
-    const pokemon = await response.json();
-    cbSuccess(pokemon);
+
+    const data = await response.json();
+    cbSuccess(data);
   } catch (err) {
-    let message = err.statusText || "Ocurrio un error al acceder a los datos";
+    let message = "Ocurrió un error al acceder a los datos";
     document.getElementById("main").innerHTML = `
-                <div class = "alert alert-danger" role="alert">
-                <p>Error ${err.status}: ${message}</p>
-                <p>Error ${err}</p>
-                </div>`;
+      <div class="alert alert-danger" role="alert">
+        <p>Error: ${message}</p>
+      </div>`;
   }
 }
 

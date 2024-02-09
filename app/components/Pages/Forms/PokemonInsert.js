@@ -1,23 +1,57 @@
-export default function PokemonInsert() {
+import config_db from "../../../helpers/config_db.js";
+import { envio } from "../../../helpers/peticion.js";
+export default function EntrenadoresInsert() {
   const $form = document.createElement("form");
+
+  $form.setAttribute("id", "form-insertar-pokemon");
 
   $form.innerHTML = `
   <div class="mb-3">
-  <label for="name" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  <label for="id" class="form-label">ID del pokemon</label>
+  <input type="text" class="form-control" name="id" id="id">
+  
 </div>
 <div class="mb-3">
-  <label for="exampleInputPassword1" class="form-label">Password</label>
-  <input type="password" class="form-control" id="exampleInputPassword1">
+  <label for="name" class="form-label">Nombre del Pokemon</label>
+  <input type="text" class="form-control" name="name" id="name">
 </div>
-<div class="mb-3 form-check">
-  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+
 </div>
-<button type="submit" class="btn btn-primary">Submit</button>
+<div class="mb-3">
+  <label for="location" class="form-label">Localización del Pokemon</label>
+  <input type="text" class="form-control" name="location" id="location">
+</div> 
+
+<div class="mb-3">
+  <label for="type" class="form-label">Tipo del Pokemon</label>
+  <input type="text" class="form-control" name="type" id="type">
+</div>
+<div class="mb-3">
+  <label for="description" class="form-label">Descripción del pokemon</label>
+  <input type="text" class="form-control" name="description" id="description">
+</div> 
+<div class="mb-3">
+  <label for="img" class="form-label">URL de la Imagen</label>
+  <input type="text" class="form-control" name="img" id="img">
+</div> 
+
+<button type="submit" class="btn btn-primary">Enviar</button>
 
 `;
+  $form.addEventListener("submit", (e) => {
+    // console.log(e);
+    e.preventDefault();
+    let form = new FormData($form);
+
+    envio({
+      url: config_db.POKEMON,
+      method: "POST",
+      datos: JSON.stringify(Object.fromEntries(form)),
+      cbSuccess: (data) => {
+        console.log(data);
+      },
+    });
+  });
 
   return $form;
 }
