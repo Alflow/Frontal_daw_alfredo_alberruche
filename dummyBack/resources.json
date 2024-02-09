@@ -183,14 +183,6 @@
       "type": "Bicho/Volador",
       "description": "Alcarapix, el Pokémon Abeja Mielera, es conocido por su incansable trabajo en los campos de La Alcarria, produciendo una de las mieles más puras y codiciadas de toda España. Este Pokémon combina fuerza y agilidad, con un exoesqueleto blindado que lo protege de los depredadores naturales y una actitud desafiante ante los retos. Sus alas doradas no solo le permiten volar a gran velocidad, sino que también reflejan la luz solar, desorientando a sus oponentes. Alcarapix utiliza su aguijón no solo para defenderse, sino también para extraer el néctar de las flores más profundas, lo que contribuye a la calidad excepcional de su miel.",
       "img": "dummyBack/images/alcarapix.png"
-    },
-    {
-      "id": "AAAA",
-      "name": "AAA",
-      "location": "AAAA",
-      "type": "AAAAAA",
-      "description": "AAAAAAA",
-      "img": "https://www.mundodeportivo.com/alfabeta/hero/2023/05/square-enix.jpg?width=768&aspect_ratio=16:9"
     }
   ],
   "entrenadores": [

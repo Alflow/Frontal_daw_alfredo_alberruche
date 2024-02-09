@@ -1,12 +1,12 @@
 export async function peticion(props) {
   try {
-    let { cbSuccess, url, method = 'GET', datos } = props; // Asume GET como método predeterminado
+    let { cbSuccess, url, method = "GET", datos } = props; // Asume GET como método predeterminado
     const response = await fetch(url, {
       method, // POST, GET, etc.
       headers: {
-        'Content-Type': 'application/json' // Asegúrate de que el servidor acepte JSON
+        "Content-Type": "application/json", // Asegúrate de que el servidor acepte JSON
       },
-      body: method !== 'GET' ? datos : null, // Solo envía datos si no es una petición GET
+      body: method !== "GET" ? datos : null, // Solo envía datos si no es una petición GET
     });
 
     if (!response.ok) {
@@ -46,3 +46,5 @@ export async function envio(props) {
                 </div>`;
   }
 }
+
+

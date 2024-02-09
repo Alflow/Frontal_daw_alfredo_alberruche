@@ -15,22 +15,22 @@ export default function Header() {
         <a class="nav-link active" aria-current="page" href="#home">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#pokemon">Pokemon</a>
+        <a class="nav-link active" href="#pokemon">Pokedex España</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link active dropdown-toggle" href="#entrenadores" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Entrenadores
+          Gestiona los Pokemon!
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#insertarPokemon">Añade un nuevo Pokemon</a></li>
+          <li><a class="dropdown-item" href="#modificarPokemon">Modifica tus Pokemon</a></li>
+          <li><a class="dropdown-item" href="#eliminarPokemon">Elimina tus Pokemon</a></li>
+          
           <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
+         
         </ul>
       </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#insertarPokemon">Añade nuevos Pokemon!</a>
-      </li>
+      
       <li class="nav-item">
         <a class="nav-link active" href="#insertarEntrenadores">Añade nuevos Entrenadores!</a>
       </li>
