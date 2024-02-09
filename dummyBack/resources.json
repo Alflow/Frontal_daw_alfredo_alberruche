@@ -150,7 +150,6 @@
       "location": "Gerona",
       "type": "Roca/Fantasma",
       "description": "Murallix es un Pokémon que personifica las antiguas murallas y el legado histórico de Gerona. Su cuerpo parece estar construido de piedras antiguas que han resistido el paso del tiempo, con partes de su ser que parecen desvanecerse en el aire, reflejando el aspecto fantasmal de las leyendas y las historias pasadas que resuenan en las calles y estructuras antiguas de la ciudad. Murallix tiene la capacidad de manipular su forma física, volviéndose intangible o sólido a voluntad, lo que le permite proteger los tesoros y secretos ocultos en Gerona.",
-      
       "img": "dummyBack/images/murallix.png"
     },
     {
@@ -184,9 +183,15 @@
       "type": "Bicho/Volador",
       "description": "Alcarapix, el Pokémon Abeja Mielera, es conocido por su incansable trabajo en los campos de La Alcarria, produciendo una de las mieles más puras y codiciadas de toda España. Este Pokémon combina fuerza y agilidad, con un exoesqueleto blindado que lo protege de los depredadores naturales y una actitud desafiante ante los retos. Sus alas doradas no solo le permiten volar a gran velocidad, sino que también reflejan la luz solar, desorientando a sus oponentes. Alcarapix utiliza su aguijón no solo para defenderse, sino también para extraer el néctar de las flores más profundas, lo que contribuye a la calidad excepcional de su miel.",
       "img": "dummyBack/images/alcarapix.png"
+    },
+    {
+      "id": "AAAA",
+      "name": "AAA",
+      "location": "AAAA",
+      "type": "AAAAAA",
+      "description": "AAAAAAA",
+      "img": "https://i.imgur.com/51DUJB5.png"
     }
-    
-   
   ],
   "entrenadores": [
     {
