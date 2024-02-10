@@ -100,7 +100,7 @@
       "id": "13",
       "name": "Pireneox",
       "location": "Huesca",
-      "type": "Roca/Hielo",
+      "type": "Hielo",
       "description": "Pireneox es un Pokémon que personifica la magnificencia de los Pirineos de Huesca, con un cuerpo formado por rocas y cristales de hielo que reflejan la luz, creando destellos similares a los de los paisajes helados y montañosos. Sus movimientos son ágiles y gráciles, a pesar de su apariencia robusta, permitiéndole navegar por terrenos escarpados con facilidad. Pireneox tiene la habilidad de generar avalanchas o controlar el hielo para defender su territorio y proteger la naturaleza.",
       "img": "dummyBack/images/pireneox.png"
     },
@@ -142,7 +142,7 @@
       "location": "Barcelona",
       "type": "Roca/Psíquico",
       "description": "Gaudix es un Pokémon que refleja la singularidad y la creatividad de la arquitectura modernista de Barcelona. Su cuerpo está formado por estructuras y texturas que recuerdan a las obras de Gaudí, como la Sagrada Familia y el Parque Güell, con colores vibrantes y formas orgánicas que parecen desafiar las convenciones. Gaudix tiene la capacidad de alterar su entorno para crear espacios confusos y maravillosos, usando su poder psíquico para desorientar a sus oponentes mientras los cautiva con su belleza.",
-      "img": "dummyBack/images/murallix.png"
+      "img": "dummyBack/images/gaudix.png"
     },
     {
       "id": "19",

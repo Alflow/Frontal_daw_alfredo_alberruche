@@ -61,6 +61,11 @@ color: white;
   color: gray;
   fill: white;
 }
+
+.hielo{
+  color: rgb(255, 255, 255);
+  fill: rgb(36, 176, 236);
+}
 .normal{
   color: red;
   fill: white;
@@ -74,4 +79,13 @@ color: white;
 .fantasma{
   color: rgb(0, 0, 0);
   fill: rgb(255, 255, 255);
+}
+
+.volador{
+  color: rgb(82, 20, 20);
+  fill: rgb(240, 170, 170);
+}
+.psiquico{
+  color: black;
+  fill: pink;
 }
