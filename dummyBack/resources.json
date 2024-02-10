@@ -36,7 +36,7 @@
       "id": "5",
       "name": "Sidralus",
       "location": "Asturias",
-      "type": "Planta/Hada",
+      "type": "Planta",
       "description": "Sidralus es un Pokémon que personifica el espíritu de Asturias, desde sus bosques neblinosos y montañas hasta sus tradiciones ancestrales. Este Pokémon tiene la habilidad de fermentar néctar en su interior para crear una sidra mágica que tiene propiedades curativas y revitalizantes. Su cuerpo está adornado con hojas y flores de manzano, y desprende un agradable aroma a sidra fresca. Sidralus es muy respetado y querido en las comunidades donde habita, a menudo asociado con festividades y reuniones.",
       "img": "dummyBack/images/sidralus.png"
     },
@@ -60,7 +60,7 @@
       "id": "8",
       "name": "Flyschdra",
       "location": "Guipúzcoa",
-      "type": "Roca/Agua",
+      "type": "Agua",
       "description": "Flyschdra es un Pokémon que simboliza la majestuosa costa de Guipúzcoa y su rica herencia cultural. Su cuerpo se asemeja a las capas de roca encontradas en el Flysch, con tonalidades que van desde el gris oscuro hasta el verde y azul, reflejando el mar. Flyschdra tiene la capacidad de manipular el agua a su alrededor para protegerse y atacar, y sus múltiples cabezas representan la diversidad y riqueza cultural de Guipúzcoa.",
       "img": "dummyBack/images/flyschdra.png"
     },
@@ -68,7 +68,7 @@
       "id": "9",
       "name": "Gasteizor",
       "location": "Álava",
-      "type": "Fantasma/Tierra",
+      "type": "Fantasma/Roca",
       "description": "Gasteizor es un Pokémon que encarna la historia medieval y las leyendas de Álava. Inspirado en las murallas y torres de Vitoria-Gasteiz, su cuerpo parece estar hecho de antiguas piedras cubiertas de musgo, y sus ojos brillan con la sabiduría de los siglos. Gasteizor tiene la habilidad de desaparecer y reaparecer a voluntad, como los fantasmas de las leyendas que rondan el casco antiguo, y sus ataques tienen un aire místico, rememorando las batallas históricas y las estrategias de defensa de la ciudad.",
       "img": "dummyBack/images/gasteizor.png"
     },
@@ -132,7 +132,7 @@
       "id": "17",
       "name": "Gladiaton",
       "location": "Tarragona",
-      "type": "Lucha/Roca",
+      "type": "Roca",
       "description": "Gladiaton es un Pokémon que personifica la valentía y el espíritu de los antiguos gladiadores romanos. Su cuerpo está formado por piedras que parecen talladas en las mismas rocas de las antiguas construcciones romanas de Tarragona, con marcas y cicatrices que cuentan historias de batallas pasadas. Gladiaton lleva un casco y armadura inspirados en los gladiadores, pero con un toque Pokémon. Es un luchador nato, con un fuerte sentido del honor y la justicia, y utiliza técnicas de combate que recuerdan a las de los gladiadores, adaptadas a su poderoso estilo Pokémon.",
       "img": "dummyBack/images/gladiaton.png"
     },
@@ -164,7 +164,7 @@
       "id": "21",
       "name": "Fallarbol",
       "location": "Valencia",
-      "type": "Fuego/Planta",
+      "type": "Fuego",
       "description": "Fallarbol encarna el espíritu de las Fallas de Valencia, un festival donde se queman construcciones artísticas para celebrar la llegada de la primavera. Su cuerpo parece hecho de madera y papel maché, materiales usados en las fallas, decorado con motivos florales y llamas que no lo consumen. Fallarbol tiene la capacidad de generar y controlar el fuego sin quemarse, utilizando este poder para proteger los bosques y campos de Valencia. Este Pokémon simboliza el renacimiento y la renovación, al igual que el festival celebra el final del invierno y el comienzo de una nueva estación.",
       "img": "dummyBack/images/fallarbol.png"
     },
@@ -172,7 +172,7 @@
       "id": "22",
       "name": "Solfructo",
       "location": "Alicante",
-      "type": "Fuego/Planta",
+      "type": "Planta",
       "description": "Solfructo es un Pokémon que simboliza la energía del sol que nutre los campos de Alicante y la celebración del fuego durante las Hogueras de San Juan. Su cuerpo tiene la forma de un árbol frutal, con hojas verdes y brillantes y frutas que parecen pequeños soles, irradiando luz y calor. Las 'frutas solares' de Solfructo son altamente energéticas y pueden revitalizar a otros Pokémon. Durante las batallas, Solfructo utiliza el poder del sol para fortalecer sus ataques de tipo Fuego y Planta, y su presencia es un recordatorio del ciclo de crecimiento, celebración y renovación.",
       "img": "dummyBack/images/solfructo.png"
     },
@@ -180,7 +180,7 @@
       "id": "23",
       "name": "Alcarapix",
       "location": "Guadalajara",
-      "type": "Bicho/Volador",
+      "type": "Bicho",
       "description": "Alcarapix, el Pokémon Abeja Mielera, es conocido por su incansable trabajo en los campos de La Alcarria, produciendo una de las mieles más puras y codiciadas de toda España. Este Pokémon combina fuerza y agilidad, con un exoesqueleto blindado que lo protege de los depredadores naturales y una actitud desafiante ante los retos. Sus alas doradas no solo le permiten volar a gran velocidad, sino que también reflejan la luz solar, desorientando a sus oponentes. Alcarapix utiliza su aguijón no solo para defenderse, sino también para extraer el néctar de las flores más profundas, lo que contribuye a la calidad excepcional de su miel.",
       "img": "dummyBack/images/alcarapix.png"
     },
