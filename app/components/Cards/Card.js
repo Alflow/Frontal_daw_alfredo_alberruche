@@ -6,12 +6,7 @@ export function Card(pokemon) {
   $card.classList.add("card");
 
   const $img = document.createElement("img");
-  // Verificación correcta de la presencia de "imgur" en la URL de la imagen
-  if (pokemon.img.includes("imgur")) {
-    $img.src = pokemon.img;
-  } else {
-    $img.src = pokemon.img;
-  }
+  $img.src = pokemon.img;
   $img.classList.add("card-img-top");
   $img.alt = "pokemon";
 
