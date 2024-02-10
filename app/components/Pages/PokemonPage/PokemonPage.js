@@ -9,6 +9,8 @@ export default function PokemonPage() {
   $headerPage.classList = "col-12 text-center mb-4"
   $headerPage.innerHTML = '<h1>¡Bienvenidos a la colección de España!</h1>'
 
+  
+
   $pokemonPage.appendChild($headerPage);
 
   $pokemonPage.id = "pokemon";

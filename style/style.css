@@ -35,13 +35,20 @@ border: 1px solid rgba(255, 255, 255, 0.77);
 color: white;
 }
 
+.card-text{
+  border: solid 1px red;
+}
 
 
 
 /* TIPOS */
-.agua{
+
+
+
+.agua {
   color: rgb(112, 112, 243);
   fill: rgb(190, 218, 233);
+  
 }
 
 .planta{
