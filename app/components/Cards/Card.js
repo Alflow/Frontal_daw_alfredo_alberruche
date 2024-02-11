@@ -3,9 +3,11 @@
 export function Card(pokemon) {
   const $col = document.createElement("div");
   $col.classList="col aos-init";
-  $col.setAttribute("data-aos", "flip-left")
+  $col.setAttribute("data-aos", "fade-right")
 
-  $col.setAttribute("data-aos-delay", 20)
+  // $col.setAttribute("data-aos-delay", 200)
+  $col.setAttribute("data-aos-offset", 200)
+  $col.setAttribute("data-aos-easing", "ease-in-sine")
   
   const $card = document.createElement("div");
   $card.classList.add("card");
