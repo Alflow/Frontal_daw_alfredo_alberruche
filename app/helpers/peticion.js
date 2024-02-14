@@ -16,6 +16,7 @@ export async function peticion(props) {
     const data = await response.json();
     cbSuccess(data);
   } catch (err) {
+    console.error(err);
     let message = "Ocurrió un error al acceder a los datos";
     document.getElementById("main").innerHTML = `
       <div class="alert alert-danger" role="alert">

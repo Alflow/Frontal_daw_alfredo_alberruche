@@ -24,9 +24,10 @@ export default function PokemonPage() {
 
   peticion({
     url: config_db.POKEMON,
-    cbSuccess: (pokemon) => {
+    cbSuccess: (response) => {
+      const pokemon = response.data;
       pokemon.forEach((e) => {
-        // console.log(e.name);
+        console.log(e.name);
         $gallery.appendChild(Card(e));
       });
     },
