@@ -58,7 +58,7 @@ export default function Header() {
 <div class="modal-dialog">
     <div class="modal-content">
         <div class="modal-body rounded">
-            <form class="rounded">
+            <form class="rounded" id="loginForm" method="POST">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
                     <input type="email" class="form-control" id="exampleInputEmail1"
@@ -83,5 +83,25 @@ export default function Header() {
 </div>`;
 
   $navbar.appendChild($modal);
+
+  // Espera a que el DOM cargue completamente antes de agregar el event listener.
+  document.addEventListener("DOMContentLoaded", (event) => {
+    const form = document.getElementById("loginForm");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      let formData = new FormData(form);
+
+      envio({
+        url: "https://dummyjson.com/auth/login",
+        method: "POST",
+        datos: JSON.stringify(Object.fromEntries(formData)),
+        cbSuccess: (data) => {
+          console.log(data);
+        },
+      });
+    });
+  });
+
+  // Devuelve el navbar completo con el modal ya incluido.
   return $navbar;
 }
