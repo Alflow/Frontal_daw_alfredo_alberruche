@@ -94,7 +94,8 @@ export default function Header() {
       envio({
         url: "https://dummyjson.com/auth/login",
         method: "POST",
-        datos: JSON.stringify(Object.fromEntries(formData)),
+        // datos: JSON.stringify(Object.fromEntries(formData)),
+        datos: formData,
         cbSuccess: (data) => {
           console.log(data);
         },

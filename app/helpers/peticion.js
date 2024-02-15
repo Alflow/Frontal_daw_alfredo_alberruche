@@ -30,7 +30,7 @@ export async function envio(props) {
     let { cbSuccess, url, method, datos } = props;
     const response = await fetch(url, {
       method: method,
-      headers: { "Content-Type": "application/json; charset=UTF-8" },
+      // headers: { "Content-Type": "application/json; charset=UTF-8" },
       body: datos,
     });
     if (!response.ok) {
@@ -47,5 +47,3 @@ export async function envio(props) {
                 </div>`;
   }
 }
-
-

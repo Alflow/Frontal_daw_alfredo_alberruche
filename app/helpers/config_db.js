@@ -1,5 +1,5 @@
 const NAME = "localhost",
-  PORT = "4000",
+  PORT = "3000",
   DOMAIN = `http://${NAME}:${PORT}`,
   POKEMON = `${DOMAIN}/pokemon`,
   ENTRENADORES = `${DOMAIN}/entrenadores`;

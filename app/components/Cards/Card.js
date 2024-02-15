@@ -13,7 +13,7 @@ export function Card(pokemon) {
   $card.classList.add("card");
 
   const $img = document.createElement("img");
-  $img.src = "http://locahlhost/" + pokemon.image;
+  $img.src = pokemon.image;
   $img.classList.add("card-img-top");
   $img.alt = "pokemon";
 

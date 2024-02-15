@@ -31,8 +31,8 @@ export default function EntrenadoresInsert() {
   <input type="text" class="form-control" name="description" id="description">
 </div> 
 <div class="mb-3">
-  <label for="img" class="form-label">URL de la Imagen</label>
-  <input type="text" class="form-control" name="img" id="img">
+  <label for="img" class="form-label">IMAGEN</label>
+  <input type="file" class="form-control" name="img" id="img">
 </div> 
 
 <button type="submit" class="btn btn-primary">Enviar</button>
