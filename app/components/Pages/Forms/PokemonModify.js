@@ -48,7 +48,7 @@ export default function EntrenadoresInsert() {
     envio({
       url: `${config_db.POKEMON}/${modifiedPokemon.id}`,
       method: "PUT",
-      datos: JSON.stringify(modifiedPokemon),
+      datos: form,
       cbSuccess: (data) => {
         console.log(data);
       },
