@@ -20,23 +20,21 @@ export default function PokemonPage() {
   $gallery.classList = "row col-12 row-cols-1 row-cols-md-4 g-5";
   $pokemonPage.appendChild($gallery);
 
-  const $pagination = document.createElement("nav");
-  $pagination.setAttribute("aria-label", "Page navigation example");
-  $pagination.innerHTML = `
+  // const $pagination = document.createElement("nav");
+  // $pagination.setAttribute("aria-label", "Page navigation example");
+  // $pagination.innerHTML = `
 
-  // PENDIENTE USAR LA LÓGICA DE PAGINACIÓN. YA SE DEVUELVE TOTAL EN LA PETICIÓN 
-  
-  // Elemento de paginación.
+  // // Elemento de paginación.
 
-  <ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-  </ul>
+  // <ul class="pagination">
+  //   <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+  //   <li class="page-item"><a class="page-link" href="#">1</a></li>
+  //   <li class="page-item"><a class="page-link" href="#">2</a></li>
+  //   <li class="page-item"><a class="page-link" href="#">3</a></li>
+  //   <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  // </ul>
 
-  `;
+  // `;
 
   // $gallery.appendChild($pagination);
   peticion({
