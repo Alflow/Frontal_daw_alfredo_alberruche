@@ -6,11 +6,7 @@ export default function EntrenadoresInsert() {
   $form.setAttribute("id", "form-insertar-pokemon");
 
   $form.innerHTML = `
-  <div class="mb-3">
-  <label for="id" class="form-label">ID del pokemon</label>
-  <input type="text" class="form-control" name="id" id="id">
-  
-</div>
+
 <div class="mb-3">
   <label for="name" class="form-label">Nombre del Pokemon</label>
   <input type="text" class="form-control" name="name" id="name">
@@ -49,6 +45,7 @@ export default function EntrenadoresInsert() {
       datos: form,
       cbSuccess: (data) => {
         console.log(data);
+        alert("Pokemon Añadido con éxito!");
       },
     });
   });

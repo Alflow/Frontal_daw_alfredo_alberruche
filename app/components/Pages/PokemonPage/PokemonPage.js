@@ -20,33 +20,91 @@ export default function PokemonPage() {
   $gallery.classList = "row col-12 row-cols-1 row-cols-md-4 g-5";
   $pokemonPage.appendChild($gallery);
 
-  // const $pagination = document.createElement("nav");
-  // $pagination.setAttribute("aria-label", "Page navigation example");
-  // $pagination.innerHTML = `
 
-  // // Elemento de paginación.
+  function handlePaginationClick(newPage) {
+    peticion({
+      url: `${config_db.POKEMON}?page=${newPage}`, 
+      cbSuccess: (response) => {
+        const { data, meta } = response;
+        const { totalPages, page } = meta;
+    
+        $gallery.innerHTML = ''; // Limpiamos la galería antes de mostrar nuevos resultados
+        data.forEach(pokemon => {
+          $gallery.appendChild(Card(pokemon)); 
+        });
+    
+        addPaginationControls(totalPages, page); 
+      },
+    });
+  }
+  
+  //Botones de paginación básicos
+  function addPaginationControls(totalPages, currentPage) {
+    const $pagination = document.createElement("ul");
+    $pagination.classList.add("pagination");
 
-  // <ul class="pagination">
-  //   <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-  //   <li class="page-item"><a class="page-link" href="#">1</a></li>
-  //   <li class="page-item"><a class="page-link" href="#">2</a></li>
-  //   <li class="page-item"><a class="page-link" href="#">3</a></li>
-  //   <li class="page-item"><a class="page-link" href="#">Next</a></li>
-  // </ul>
+    // Botón "Anterior"
+    const $prevLi = document.createElement("li");
+    $prevLi.classList.add("page-item");
+    if (currentPage === 1) $prevLi.classList.add("disabled");
 
-  // `;
+    const $prevLink = document.createElement("a");
+    $prevLink.classList.add("page-link");
+    $prevLink.href = "#";
+    $prevLink.innerText = "Anterior";
+    $prevLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (currentPage > 1) handlePaginationClick(currentPage - 1);
+    });
 
-  // $gallery.appendChild($pagination);
-  peticion({
-    url: config_db.POKEMON,
-    cbSuccess: (response) => {
-      const pokemon = response.data;
-      pokemon.forEach((e) => {
-        console.log(e.name);
-        $gallery.appendChild(Card(e));
-      });
-    },
-  });
+    $prevLi.appendChild($prevLink);
+    $pagination.appendChild($prevLi);
 
+    // Botones para cada página
+    for (let page = 1; page <= totalPages; page++) {
+        const $pageLi = document.createElement("li");
+        $pageLi.classList.add("page-item");
+        if (page === currentPage) $pageLi.classList.add("active");
+
+        const $pageLink = document.createElement("a");
+        $pageLink.classList.add("page-link");
+        $pageLink.href = "#";
+        $pageLink.innerText = page;
+        $pageLink.addEventListener("click", (e) => {
+            e.preventDefault();
+            handlePaginationClick(page);
+        });
+
+        $pageLi.appendChild($pageLink);
+        $pagination.appendChild($pageLi);
+    }
+
+    // Botón "Siguiente"
+    const $nextLi = document.createElement("li");
+    $nextLi.classList.add("page-item");
+    if (currentPage === totalPages) $nextLi.classList.add("disabled");
+
+    const $nextLink = document.createElement("a");
+    $nextLink.classList.add("page-link");
+    $nextLink.href = "#";
+    $nextLink.innerText = "Siguiente";
+    $nextLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (currentPage < totalPages) handlePaginationClick(currentPage + 1);
+    });
+
+    $nextLi.appendChild($nextLink);
+    $pagination.appendChild($nextLi);
+
+    // Reemplaza cualquier paginación existente con la nueva
+    const existingPagination = $pokemonPage.querySelector(".pagination");
+    if (existingPagination) {
+        $pokemonPage.replaceChild($pagination, existingPagination);
+    } else {
+        $pokemonPage.appendChild($pagination);
+    }
+}
+// llamamos de inmediato el paginationHandler
+  handlePaginationClick(1);
   return $pokemonPage;
 }
