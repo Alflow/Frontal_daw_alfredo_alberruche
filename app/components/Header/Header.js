@@ -73,9 +73,10 @@ export default function Header() {
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
                 </div>
-                <a class="nav-link active text-end" aria-current="page" href="#">¿No registrado? Regístrate
+                <a class="nav-link active text-end" aria-current="page" href="#signUp">¿No registrado? Regístrate
                     aquí.</a>
                 <button type="submit" class="btn">Acceder</button>
+                
             </form>
         </div>
     </div>

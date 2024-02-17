@@ -1,5 +1,6 @@
 import config_db from "../../../helpers/config_db.js";
 import { envio } from "../../../helpers/peticion.js";
+import Router from "../../Router.js";
 export default function EntrenadoresInsert() {
   const $form = document.createElement("form");
 
@@ -46,6 +47,10 @@ export default function EntrenadoresInsert() {
       cbSuccess: (data) => {
         console.log(data);
         alert("Pokemon Añadido con éxito!");
+        window.location.href = '/'; // Redirige al home
+        document.addEventListener('DOMContentLoaded', () => {
+          Router(); 
+        });
       },
     });
   });
