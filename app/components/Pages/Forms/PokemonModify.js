@@ -1,7 +1,12 @@
 import config_db from "../../../helpers/config_db.js";
 import { envio } from "../../../helpers/peticion.js";
 export default function EntrenadoresInsert() {
+
+  const $container = document.createElement("div");
+  $container.classList = "d-flex flex-column align-items-start min-vh-100";
+
   const $form = document.createElement("form");
+  $form.classList="col-md-5 mt-4 mx-auto"
 
   $form.setAttribute("id", "form-modificar-pokemon");
 
@@ -30,9 +35,9 @@ export default function EntrenadoresInsert() {
   <label for="description" class="form-label">Descripción del pokemon</label>
   <input type="text" class="form-control" name="description" id="description">
 </div> 
-<div class="mb-3">
-  <label for="img" class="form-label">URL de la Imagen</label>
-  <input type="text" class="form-control" name="img" id="img">
+<div class="mb-3 col-md-8">
+  <label for="img" class="form-label">IMAGEN</label>
+  <input type="file" class="form-control " name="img" id="img">
 </div> 
 
 <button type="submit" class="btn btn-primary">Enviar</button>
@@ -54,6 +59,6 @@ export default function EntrenadoresInsert() {
       },
     });
   });
-
-  return $form;
+  $container.appendChild($form)
+  return $container;
 }

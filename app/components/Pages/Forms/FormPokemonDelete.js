@@ -26,7 +26,8 @@ export default function FormPokemonDetelete() {
     envio({
       url: `${config_db.POKEMON}/${modifiedPokemon.id}`,
       method: "DELETE",
-      datos: JSON.stringify(modifiedPokemon),
+      // datos: JSON.stringify(modifiedPokemon),
+      datos: form,
       cbSuccess: (data) => {
         console.log(data);
       },

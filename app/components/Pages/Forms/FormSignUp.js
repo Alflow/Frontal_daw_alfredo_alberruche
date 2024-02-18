@@ -49,14 +49,11 @@ export default function FormSignUp() {
       url: config_db.SIGNUP,
       method: 'POST',
       datos: JSON.stringify(datos),
-      cbSuccess: (data) => {
-        alert("USUARIO Añadido con éxito!");
-    window.location.hash = '#home';
-        
+      cbSuccess: (data) => {        
       },
     });
   });
 
   $container.appendChild($form)
-  return $form;
+  return $container;
 }

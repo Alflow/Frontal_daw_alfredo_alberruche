@@ -39,8 +39,8 @@ export async function envio(props) {
     if (!response.ok) {
       throw new Error(response);
     }
-    // const objeto = await response.json();
-    // cbSuccess(objeto);
+    alert("EJUCIÓN SATISFACTORIA!");
+    window.location.hash = "#home";
   } catch (err) {
     let message = err.statusText || "Ocurrio un error al acceder a los datos";
     document.getElementById("main").innerHTML = `
@@ -48,6 +48,8 @@ export async function envio(props) {
                 <p>Error ${err.status}: ${message}</p>
                 <p>Error ${err}</p>
                 </div>`;
+    alert("EJUCIÓN FALLIDA!");
+    window.location.hash = "#home";
   }
 }
 export async function envioRegistro(props) {
@@ -58,16 +60,15 @@ export async function envioRegistro(props) {
     console.log(datos);
     const response = await fetch(url, {
       method: method,
-      headers: { 'Content-Type': 'application/json; charset=UTF-8' },
+      headers: { "Content-Type": "application/json; charset=UTF-8" },
       body: datos,
-    }
-    );
-    
+    });
+
     if (!response.ok) {
       throw new Error(response);
     }
-    // const objeto = await response.json();
-    // cbSuccess(objeto);
+    alert("USUARIO Añadido con éxito!");
+    window.location.hash = "#home";
   } catch (err) {
     let message = err.statusText || "Ocurrio un error al acceder a los datos";
     document.getElementById("main").innerHTML = `
