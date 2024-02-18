@@ -52,6 +52,7 @@ export async function envio(props) {
     window.location.hash = "#home";
   }
 }
+
 export async function envioRegistro(props) {
   try {
     let { cbSuccess, url, method, datos } = props;
@@ -67,8 +68,8 @@ export async function envioRegistro(props) {
     if (!response.ok) {
       throw new Error(response);
     }
-    alert("USUARIO Añadido con éxito!");
-    window.location.hash = "#home";
+    
+    cbSuccess(response);
   } catch (err) {
     let message = err.statusText || "Ocurrio un error al acceder a los datos";
     document.getElementById("main").innerHTML = `

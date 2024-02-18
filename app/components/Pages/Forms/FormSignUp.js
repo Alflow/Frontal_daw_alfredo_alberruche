@@ -49,7 +49,9 @@ export default function FormSignUp() {
       url: config_db.SIGNUP,
       method: 'POST',
       datos: JSON.stringify(datos),
-      cbSuccess: (data) => {        
+      cbSuccess: () => {  
+        alert("Usuario registrado con éxito!");
+        window.location.hash = "#home";      
       },
     });
   });

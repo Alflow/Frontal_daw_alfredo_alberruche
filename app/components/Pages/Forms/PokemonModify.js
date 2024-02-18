@@ -33,7 +33,7 @@ export default function EntrenadoresInsert() {
 </div>
 <div class="mb-3">
   <label for="description" class="form-label">Descripción del pokemon</label>
-  <input type="text" class="form-control" name="description" id="description">
+  <textarea class="form-control" name="description" id="description"></textarea>
 </div> 
 <div class="mb-3 col-md-8">
   <label for="img" class="form-label">IMAGEN</label>
@@ -55,7 +55,8 @@ export default function EntrenadoresInsert() {
       method: "PUT",
       datos: form,
       cbSuccess: (data) => {
-        console.log(data);
+        alert("Pokemon modificado con éxito!");
+        window.location.hash = "#home";
       },
     });
   });

@@ -30,10 +30,6 @@ export default function Header() {
          
         </ul>
       </li>
-      
-      <li class="nav-item">
-        <a class="nav-link active" href="#insertarEntrenadores">Añade nuevos Entrenadores!</a>
-      </li>
     </ul>
     
     <button type="button" class="btn mx-5 login" data-bs-toggle="modal"
