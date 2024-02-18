@@ -2,10 +2,16 @@ import config_db from "../../../helpers/config_db.js";
 import { envio, envioRegistro } from "../../../helpers/peticion.js";
 import Router from "../../Router.js";
 export default function FormSignUp() {
+
+  const $container = document.createElement("div");
+  
+  $container.classList = "d-flex flex-column align-items-start min-vh-100";
+
+
   const $form = document.createElement("form");
 
   $form.setAttribute("id", "form-signup");
-
+  $form.classList="col-md-5 mt-4 mx-auto"
   $form.innerHTML = `
 
 <div class="mb-3">
@@ -44,16 +50,13 @@ export default function FormSignUp() {
       method: 'POST',
       datos: JSON.stringify(datos),
       cbSuccess: (data) => {
-        console.log(data);
         alert("USUARIO Añadido con éxito!");
+    window.location.hash = '#home';
         
-
-        document.addEventListener("DOMContentLoaded", () => {
-          Router();
-        });
       },
     });
   });
 
+  $container.appendChild($form)
   return $form;
 }

@@ -60,7 +60,9 @@ export async function envioRegistro(props) {
       method: method,
       headers: { 'Content-Type': 'application/json; charset=UTF-8' },
       body: datos,
-    });
+    }
+    );
+    
     if (!response.ok) {
       throw new Error(response);
     }
