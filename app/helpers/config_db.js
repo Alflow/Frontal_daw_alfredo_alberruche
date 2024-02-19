@@ -2,10 +2,12 @@ const NAME = "localhost",
   PORT = "3000",
   DOMAIN = `http://${NAME}:${PORT}`,
   POKEMON = `${DOMAIN}/pokemon`,
-  SIGNUP = `${DOMAIN}/users/register`;
+  SIGNUP = `${DOMAIN}/users/register`,
+  LOGIN = `${DOMAIN}/users/login`;
 export default {
   NAME,
   DOMAIN,
   POKEMON,
   SIGNUP,
+  LOGIN,
 };

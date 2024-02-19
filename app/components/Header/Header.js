@@ -1,3 +1,6 @@
+import config_db from "../../helpers/config_db.js";
+import { peticion } from "../../helpers/peticion.js";
+
 export default function Header() {
   const $navbar = document.createElement("nav");
 
@@ -82,21 +85,27 @@ export default function Header() {
   $navbar.appendChild($modal);
 
   // Espera a que el DOM cargue completamente antes de agregar el event listener.
-  document.addEventListener("DOMContentLoaded", (event) => {
-    const form = document.getElementById("loginForm");
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      let formData = new FormData(form);
+  const $loginForm = document.getElementById("loginForm");
 
-      envio({
-        url: "https://dummyjson.com/auth/login",
-        method: "POST",
-        // datos: JSON.stringify(Object.fromEntries(formData)),
-        datos: formData,
-        cbSuccess: (data) => {
-          console.log(data);
-        },
-      });
+  $modal.addEventListener("submit", (e) => {
+    // console.log(e);
+    e.preventDefault();
+    let form = new FormData($loginform);
+
+    let datos = {};
+    // Convierte FormData a un objeto JavaScript
+    form.forEach((value, key) => {
+      datos[key] = value;
+    });
+
+    envioRegistro({
+      url: config_db.LOGIN,
+      method: "POST",
+      datos: JSON.stringify(datos),
+      cbSuccess: () => {
+        alert("Usuario registrado con éxito!");
+        window.location.hash = "#home";
+      },
     });
   });
 

@@ -2,12 +2,11 @@ import config_db from "../../../helpers/config_db.js";
 import { envio } from "../../../helpers/peticion.js";
 import Router from "../../Router.js";
 export default function EntrenadoresInsert() {
-
   const $container = document.createElement("div");
   $container.classList = "d-flex flex-column align-items-start min-vh-100";
 
   const $form = document.createElement("form");
-  $form.classList="col-md-5 mt-4 mx-auto"
+  $form.classList = "col-md-5 mt-4 mx-auto";
   $form.setAttribute("id", "form-insertar-pokemon");
 
   $form.innerHTML = `
@@ -52,12 +51,11 @@ export default function EntrenadoresInsert() {
         console.log(data);
         alert("Pokemon añadido con éxito!");
         window.location.hash = "#home";
-        
       },
     });
   });
 
-  $container.appendChild($form)
+  $container.appendChild($form);
 
   return $container;
 }
