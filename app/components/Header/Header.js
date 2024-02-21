@@ -20,17 +20,16 @@ export default function Header() {
       <li class="nav-item">
         <a class="nav-link active" href="#pokemon">Pokedex España</a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown d-none">
         <a class="nav-link active dropdown-toggle" href="#entrenadores" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Gestiona los Pokemon!
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#insertarPokemon">Añade un nuevo Pokemon</a></li>
+          <li><a class="dropdown-item" href="#insertarPokemon" >Añade un nuevo Pokemon</a></li>
           <li><a class="dropdown-item" href="#modificarPokemon">Modifica tus Pokemon</a></li>
           <li><a class="dropdown-item" href="#eliminarPokemon">Elimina tus Pokemon</a></li>
           
           <li><hr class="dropdown-divider"></li>
-         
         </ul>
       </li>
     </ul>
@@ -72,8 +71,11 @@ export default function Header() {
                     <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
                 </div>
                 <a class="nav-link active text-end" aria-current="page" href="#signUp">¿No registrado? Regístrate
-                    aquí.</a>
-                <button type="submit" class="btn">Acceder</button>
+                    aquí.
+                </a>
+
+                <button type="submit" class="btn" id="btn-login">Acceder</button>
+                <button type="submit" class="btn" id="btn-login">Acceder</button>
                 
             </form>
         </div>
@@ -82,32 +84,6 @@ export default function Header() {
 </div>`;
 
   $navbar.appendChild($modal);
-
-  // Espera a que el DOM cargue completamente antes de agregar el event listener.
-  // const $loginForm = document.getElementById("loginForm");
-
-  // $modal.addEventListener("submit", (e) => {
-  //   // console.log(e);
-  //   e.preventDefault();
-  //   let form = new FormData($loginForm);
-
-  //   let datos = {};
-  //   // Convierte FormData a un objeto JavaScript
-  //   form.forEach((value, key) => {
-  //     datos[key] = value;
-  //   });
-
-  //   envioLogin({
-  //     url: config_db.LOGIN,
-  //     method: "POST",
-  //     datos: JSON.stringify(datos),
-  //     cbSuccess: (data) => {
-  //       alert("Usuario registrado con éxito!");
-  //       console.log(data);
-  //       // window.location.hash = "#home";
-  //     },
-  //   });
-  // });
 
   // Devuelve el navbar completo con el modal ya incluido.
   return $navbar;
