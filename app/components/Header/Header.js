@@ -1,5 +1,5 @@
 import config_db from "../../helpers/config_db.js";
-import { peticion } from "../../helpers/peticion.js";
+import { envioLogin, peticion } from "../../helpers/peticion.js";
 
 export default function Header() {
   const $navbar = document.createElement("nav");
@@ -60,13 +60,12 @@ export default function Header() {
             <form class="rounded" id="loginForm" method="POST">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1"
-                        aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">No compartiremos tus datos con nadie</div>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input name="password" type="password" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -85,29 +84,30 @@ export default function Header() {
   $navbar.appendChild($modal);
 
   // Espera a que el DOM cargue completamente antes de agregar el event listener.
-  const $loginForm = document.getElementById("loginForm");
+  // const $loginForm = document.getElementById("loginForm");
 
-  $modal.addEventListener("submit", (e) => {
-    // console.log(e);
-    e.preventDefault();
-    let form = new FormData($loginform);
+  // $modal.addEventListener("submit", (e) => {
+  //   // console.log(e);
+  //   e.preventDefault();
+  //   let form = new FormData($loginForm);
 
-    let datos = {};
-    // Convierte FormData a un objeto JavaScript
-    form.forEach((value, key) => {
-      datos[key] = value;
-    });
+  //   let datos = {};
+  //   // Convierte FormData a un objeto JavaScript
+  //   form.forEach((value, key) => {
+  //     datos[key] = value;
+  //   });
 
-    envioRegistro({
-      url: config_db.LOGIN,
-      method: "POST",
-      datos: JSON.stringify(datos),
-      cbSuccess: () => {
-        alert("Usuario registrado con éxito!");
-        window.location.hash = "#home";
-      },
-    });
-  });
+  //   envioLogin({
+  //     url: config_db.LOGIN,
+  //     method: "POST",
+  //     datos: JSON.stringify(datos),
+  //     cbSuccess: (data) => {
+  //       alert("Usuario registrado con éxito!");
+  //       console.log(data);
+  //       // window.location.hash = "#home";
+  //     },
+  //   });
+  // });
 
   // Devuelve el navbar completo con el modal ya incluido.
   return $navbar;

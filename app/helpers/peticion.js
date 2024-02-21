@@ -79,3 +79,21 @@ export async function envioRegistro(props) {
                 </div>`;
   }
 }
+
+
+export async function envioLogin({ url, method, datos, cbSuccess }) {
+  try {
+    const response = await fetch(url, {
+      method: method,
+      headers: { "Content-Type": "application/json" },
+      body: datos,
+    });
+    const jsonResponse = await response.json();
+    if (!response.ok) throw new Error(jsonResponse);
+    cbSuccess(jsonResponse);
+  } catch (error) {
+    //MANEJAR ERROR
+    console.error('Ocurrió un error:', error);
+    alert("Error al procesar la solicitud de inicio de sesión.");
+  }
+}
