@@ -1,0 +1,12 @@
+{
+  "name": "dwec_spa_alfredo_alberruche",
+  "version": "1.0.0",
+  "description": "SPA de página web Fan Made de Pokemon. La finalidad es la de probar a construir una Single Page Application con js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alfredo Alberruche (Alflow)",
+  "license": "ISC"
+}
