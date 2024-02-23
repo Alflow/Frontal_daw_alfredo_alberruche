@@ -20,7 +20,7 @@ export default function Header() {
       <li class="nav-item">
         <a class="nav-link active" href="#pokemon">Pokedex España</a>
       </li>
-      <li class="nav-item dropdown d-none">
+      <li id="gestion_pokemon" class="nav-item dropdown d-none">
         <a class="nav-link active dropdown-toggle" href="#entrenadores" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Gestiona los Pokemon!
         </a>

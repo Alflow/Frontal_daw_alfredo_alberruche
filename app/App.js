@@ -11,6 +11,9 @@ export default function App() {
   
   // Importamos header
   $root.appendChild(Header());
+  if(localStorage.getItem("authToken")){
+    document.getElementById("gestion_pokemon").classList.remove("d-none");
+  }
     // EN PRUEBAS...
     document.body.addEventListener('submit', function(e) {
       if (e.target && e.target.id === 'loginForm') {
@@ -36,13 +39,15 @@ export default function App() {
               localStorage.setItem('authToken', response.data.token);
               alert(`Bienvenido ${response.message}`);
               console.log(response.data.token); // DESCOMENTAR PARA ENTREGA FINAL
-              
-              window.location.hash = "#home";
+
+              document.getElementById("gestion_pokemon").classList.remove("d-none");
+              window.location.reload();
             }
           },
         });
       }
     });
+
 
 
   $root.appendChild(Main());
