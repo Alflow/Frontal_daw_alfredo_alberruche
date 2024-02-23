@@ -43,7 +43,8 @@ export default function EntrenadoresInsert() {
     e.preventDefault();
     let form = new FormData($form);
 
-    envio({
+    envio(
+      {
       url: config_db.POKEMON,
       method: "POST",
       datos: form,

@@ -13,6 +13,8 @@ export default function App() {
   $root.appendChild(Header());
   if(localStorage.getItem("authToken")){
     document.getElementById("gestion_pokemon").classList.remove("d-none");
+  }else{
+    document.getElementById("gestion_pokemon").classList.add("d-none");
   }
     // EN PRUEBAS...
     document.body.addEventListener('submit', function(e) {
