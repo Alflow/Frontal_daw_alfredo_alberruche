@@ -29,7 +29,8 @@ export default function FormPokemonDetelete() {
       // datos: JSON.stringify(modifiedPokemon),
       datos: form,
       cbSuccess: (data) => {
-        console.log(data);
+        alert("Pokemon eliminado con éxito!");
+        window.location.hash = "#home";
       },
     });
   });

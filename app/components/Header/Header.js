@@ -59,12 +59,12 @@ export default function Header() {
             <form class="rounded" id="loginForm" method="POST">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="antonio@gmail.edu">
                     <div id="emailHelp" class="form-text">No compartiremos tus datos con nadie</div>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                    <input name="password" type="password" class="form-control" id="exampleInputPassword1">
+                    <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Abc123??">
                 </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">

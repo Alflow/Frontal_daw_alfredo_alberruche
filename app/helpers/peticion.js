@@ -54,6 +54,7 @@ export async function enviarAuth(props) {
       body: objeto,
     });
     const json = await res.json();
+    
     if (!res.ok) {
       //Si ocurre un error lanzamos un error con la respuesta y el body en formato objeto
       throw { res, json };
@@ -63,6 +64,7 @@ export async function enviarAuth(props) {
   } catch (err) {
     const { res, json } = err;
     let message = res.statusText || "Ocurrió un error al acceder a la API";
+    alert("EROR!" + message)
     document.getElementById("main").innerHTML = `
   <div class="alert alert-danger" role="alert">
   <p>Error ${res.status}: ${message}</p>

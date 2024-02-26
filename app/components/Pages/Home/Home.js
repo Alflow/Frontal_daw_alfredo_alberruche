@@ -12,28 +12,10 @@ export default function Home() {
   $gallery.classList = "row col-9 row-cols-1 row-cols-md-6 g-4";
   $home.appendChild($gallery);
 
-//   $home.innerHTML = `
-//   <div>
-//   <!-- INICIO / HOME -->
-//   <section class="full-height  px-lg-5">
-//       <div class="container">
-//           <div class="col-lg-10">
-//               <h1 class="display-4 fw-bold">Pokemon Spain Edition (FanMade)</h1>
-//               <img src="dummyBack/images/HEROTEST.png" class="img-fluid" />
-//               <p class="lead mt-2 mb-4" >Bienvenido a la podeDeSpain</p>
-              
-//           </div>
-//       </div>
-//   </section>
-  
-  
-  
-//   `;
-
-$home.innerHTML = `
+  $home.innerHTML = `
 <div id="content-wrapper">
         <!-- INICIO / HOME -->
-        <section id="homesection" class="full-height px-lg-5">
+        <section id="homesection" class="full-height px-lg-5 mb-3">
             <div class="container">
                 <div class="col-12">
                     <h1>BIENVENIDO A LA POKEDEX ESPAÑOLA</h1>
@@ -43,45 +25,33 @@ $home.innerHTML = `
             </div>
         </section>
         
-        <!-- // INICIO / HOME -->
+        <h2 class="text-center mt-3">El límite es tu imaginación!</h2>
 
-        <!-- PRESENTACIÓN //INTRODUCTION  -->
-        <section id="intro" class="full-height px-lg-5">
-            <div class="container col-12 bg-dark p-3 d-flex">
-                
-                
-
-                <div class="row gy-4">
-                    <h4>TEST TEST WEB</h4>
-                    <div class="col-md-6">
-                        
-                    </div>
-
-                    <div class="col-md-6">
-                        
-                    </div>
-                    <h4>LOCUCIÓN Y DOBLAJE</h4>
-                    <div class="col-md-6">
-                        
-                    </div>
-                    <div class="col-md-6">
-                        
-                    </div>
-                    <h4>CREADOR DE LA API</h4>
-                    <div class="col-md-6">
-                        
-                    </div>
-                    
-                    <div class="col-md-6">
-                        
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- //TRABAJOS //WORK  -->
-
+       
+        <section class="features text-center full-height p-3">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="./assets/images/PREVIEW.PNG" class="card-img-top" alt="Imagen que previsualiza el funcionamiento de la web. Añadir Pokemon">
+      <div class="card-body">
+        <h3 class="card-title">¡Añade nuevos Pokemon!</h3>
+        <p class="card-text">Crea tus pokemon con DALL-E, otra IA o dibuja tú mismo el Pokemon que pertenecerá a cada provincia española!</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="./assets/images/PREVIEW2.PNG" class="card-img-top" alt="Imagen que previsualiza el funcionamiento de la web. Modificar Pokemon">
+      <div class="card-body">
+        <h3 class="card-title">¡Modifica los Pokemon!</h3>
+        <p class="card-text">¡Modifica sus atributos, localización e ilustración! El límite es tu imaginación. Pero recuerda que debes estar registrado!</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+    </section>
         
-        <!-- // SOBRE MÍ // ABOUT ME -->
 
 
 
@@ -89,7 +59,7 @@ $home.innerHTML = `
 
     </div>
     <!-- // CONTENT WRAPPER -->
-`
+`;
 
   return $home;
 }

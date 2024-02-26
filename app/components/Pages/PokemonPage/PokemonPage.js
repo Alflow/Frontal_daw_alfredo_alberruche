@@ -42,6 +42,7 @@ export default function PokemonPage() {
   function addPaginationControls(totalPages, currentPage) {
     const $pagination = document.createElement("ul");
     $pagination.classList.add("pagination");
+    $pagination.classList.add("mt-3");
 
     // Botón "Anterior"
     const $prevLi = document.createElement("li");
