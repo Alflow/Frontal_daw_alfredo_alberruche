@@ -53,6 +53,8 @@ export default function App() {
             console.log(response.data.token); // DESCOMENTAR PARA ENTREGA FINAL
             document.getElementById("logInBtn").classList.add("d-none");
             document.getElementById("logOutBtn").classList.remove("d-none");
+            Eliminar el backdrop
+            // document.body.removeChild()
             // window.location.reload();
           }
         },
