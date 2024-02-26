@@ -15,7 +15,13 @@ export function Card(pokemon) {
   const $img = document.createElement("img");
   $img.src = pokemon.image;
   $img.classList.add("card-img-top");
-  $img.alt = "imagen del pokemon " + pokemon.name;
+  $img.alt =
+    "imagen del pokemon " +
+    pokemon.name +
+    ". Es de tipo " +
+    pokemon.type +
+    "." +
+    pokemon.description;
 
   const $cardBody = document.createElement("div");
   $cardBody.classList = "card-body d-flex flex-column";
