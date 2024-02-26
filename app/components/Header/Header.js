@@ -34,9 +34,14 @@ export default function Header() {
       </li>
     </ul>
     
-    <button type="button" class="btn mx-5 login" data-bs-toggle="modal"
+    <button id="logInBtn" type="button" class="btn mx-5 login" data-bs-toggle="modal"
     data-bs-target="#exampleModal">
     LOGIN
+    </button>
+
+    <button id="logOutBtn" type="button" class="btn mx-5 login d-none" data-bs-toggle="modal d-none"
+    data-bs-target="#exampleModal">
+    LOGOUT
     </button>
 
     <form class="d-flex" role="search">
@@ -75,7 +80,7 @@ export default function Header() {
                 </a>
 
                 <button type="submit" class="btn" id="btn-login">Acceder</button>
-                <button type="submit" class="btn" id="btn-login">Acceder</button>
+                
                 
             </form>
         </div>
