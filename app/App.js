@@ -53,9 +53,16 @@ export default function App() {
             console.log(response.data.token); // DESCOMENTAR PARA ENTREGA FINAL
             document.getElementById("logInBtn").classList.add("d-none");
             document.getElementById("logOutBtn").classList.remove("d-none");
+
+            // document.body.classList.remove("modal-open");
+            const $modalDelete = document.getElementsByClassName(
+              "modal-backdrop fade show"
+            );
+            $modalDelete[0].remove();
             // Eliminar el backdrop
             // document.body.removeChild()
-            // window.location.reload();
+            // window.location
+            window.location.reload();
           }
         },
       });

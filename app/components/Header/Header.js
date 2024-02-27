@@ -88,6 +88,7 @@ export default function Header() {
 </div>
 </div>`;
 
+
   $navbar.appendChild($modal);
 
   // Devuelve el navbar completo con el modal ya incluido.
