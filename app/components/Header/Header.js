@@ -48,9 +48,6 @@ export default function Header() {
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
-    
-    
-
   </div>
 </div>
 `;
@@ -78,16 +75,12 @@ export default function Header() {
                 <a class="nav-link active text-end" aria-current="page" href="#signUp">¿No registrado? Regístrate
                     aquí.
                 </a>
-
                 <button type="submit" class="btn" id="btn-login">Acceder</button>
-                
-                
             </form>
         </div>
     </div>
 </div>
 </div>`;
-
 
   $navbar.appendChild($modal);
 

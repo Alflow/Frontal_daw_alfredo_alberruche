@@ -59,9 +59,6 @@ export default function App() {
               "modal-backdrop fade show"
             );
             $modalDelete[0].remove();
-            // Eliminar el backdrop
-            // document.body.removeChild()
-            // window.location
             window.location.reload();
           }
         },
