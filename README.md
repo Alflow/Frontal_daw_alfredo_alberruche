@@ -3,6 +3,8 @@
 Este proyecto es un SPA (Single Page Application) fan-made, creado por y para fans del universo Pokémon con un enfoque educativo y de entretenimiento. La aplicación está inspirada en las diversas provincias españolas, utilizando características únicas de cada una, desde su cultura y geografía hasta las leyendas locales, para representar criaturas al estilo Pokémon.
 
 Este proyecto es puramente fan-made, sin ánimo de lucro, y busca ofrecer una experiencia interactiva y educativa a través de un entorno web amigable y dinámico.
+![Image Alt text](assets/images/preview1Readme.PNG "Preview1")
+![Image Alt text](assets/images/preview2Readme.PNG "Preview2")
 
 ## Características
 
