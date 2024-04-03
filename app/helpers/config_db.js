@@ -1,5 +1,5 @@
 const NAME = "localhost",
-  PORT = "3000",
+  PORT = "3080",
   DOMAIN = `http://${NAME}:${PORT}`,
   POKEMON = `${DOMAIN}/pokemon`,
   SIGNUP = `${DOMAIN}/users/register`,
